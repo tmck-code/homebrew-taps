@@ -1,14 +1,14 @@
 class Pokesay < Formula
   desc "Print pokemon in the CLI! An adaptation of the classic 'cowsay'"
   homepage "https://github.com/tmck-code/pokesay"
-  url "https://github.com/tmck-code/pokesay/releases/download/v0.18.2/pokesay-0.18.2.tar.gz"
-  sha256 "fa8ce4ce21d0cf4a2ce8a3e664088c222feefed6fab39738f78b6845f996d123"
+  url "https://github.com/tmck-code/pokesay/releases/download/v0.18.3/pokesay-0.18.3.tar.gz"
+  sha256 "b0a339cb0a6050b3bb3776e820ffddcce1bcf8b295205e34b5826e7947269217"
   license "BSD-3-Clause"
 
   def install
-    if OS.mac? && Hardware::CPU.intel?      then binfile = "pokesay-0.18.2-darwin-amd64"
-    elsif OS.mac? && Hardware::CPU.arm?     then binfile = "pokesay-0.18.2-darwin-arm64"
-    elsif OS.linux? && Hardware::CPU.intel? then binfile = "pokesay-0.18.2-linux-amd64"
+    if OS.mac? && Hardware::CPU.intel?      then binfile = "pokesay-0.18.3-darwin-amd64"
+    elsif OS.mac? && Hardware::CPU.arm?     then binfile = "pokesay-0.18.3-darwin-arm64"
+    elsif OS.linux? && Hardware::CPU.intel? then binfile = "pokesay-0.18.3-linux-amd64"
     end
 
     bin.install binfile => "pokesay"
